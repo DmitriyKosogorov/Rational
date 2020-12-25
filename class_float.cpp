@@ -70,7 +70,12 @@ Rational sqr(Rational d)
 		a = pow(a, 0.5);
 		b = pow(b, 0.5);
 		//cout<<d<<endl << a << endl << b << endl << a / b<<endl;
-		while (a < 1000000 and b < 1000000)
+		while (a > intmax || b > intmax)
+		{
+			a = a / 10;
+			b = b / 10;
+		}
+		while (a < 1000000 && b < 1000000)
 		{
 			a = a * 10;
 			b = b * 10;

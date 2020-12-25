@@ -5,6 +5,9 @@
 #include<cmath>
 #include<iomanip>
 using namespace std;
+
+const int intmax = 2100000000;
+
 class Rational
 {
 //private:
